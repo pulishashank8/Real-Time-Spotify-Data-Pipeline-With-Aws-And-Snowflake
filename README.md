@@ -1,6 +1,9 @@
-# AWS-Snowflake-Music-Insights-Pipeline
+# REAL-TIME MUSIC DATA PIPELINE WITH AWS AND SNOWFLAKE
  
-Harnessed the Power of AWS Services ( S3, Lambda Functions, IAM Roles, S3 Event Notifications, CloudWatch Triggers) for Deeper Music Streaming Insights tailored to extracting, transforming and loading (ETL) transformed Spotify's data into Snowflake Data warehouse ( S3 Storage Integration & Snowpipe ) for unlocking profound insights into the dynamics of top music artists, albums, and tracks featured in the Top 100 Global playlists. The data pipeline initiates by fetching information from the Spotify API, followed by meticulous data processing to render it conducive for analysis. The refined data is then seamlessly loaded into Snowflake Database using its Serverless feature called Snowpipe. 
+This project implements a real-time ETL pipeline for Spotify Top 100 Global playlists. The pipeline extracts data from the Spotify API, processes it with AWS Lambda, stores intermediate files in S3, and loads transformed data into Snowflake via Snowpipe for analysis of top artists, albums, and tracks.
+
+# Description
+Built a real-time ETL pipeline using AWS (S3, Lambda, CloudWatch, IAM) and Snowflake (Snowpipe, Storage Integration) to process Spotify Top 100 playlist data. Automated extraction from the Spotify API, transformation with Pandas in Lambda, and continuous ingestion into Snowflake enabled analytics on top music trends.
 
 ## Serverless Services used in AWS and Snowflake:
 
@@ -65,7 +68,13 @@ Transform data and Load it in Snowflake Data Warehouse ----> Finding the insight
 2. Make sure the IAM role for accessing Snowflake Data Warehouse is given externally.
 3. All the detail codes for creating the s3 storage integration, staging areas and snowpipes have been attached to this repo. 
 4. This Project can further be enhanced by importing the Snowflake Datawarehouse results/tables in to the Visualization Tools like Tableau or PowerBI.
+   
+# Future Enhancements
 
+Integrate with Power BI / Tableau for dashboards
+Add unit testing for Lambda transformation logic
+Implement CI/CD with GitHub Actions
+Extend pipeline for regional playlists
 
 
 
